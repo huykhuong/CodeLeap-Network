@@ -16,7 +16,7 @@ const Signup = () => {
   }, [username]);
 
   return (
-    <main className="signup-page">
+    <main>
       <SignupForm />
     </main>
   );
