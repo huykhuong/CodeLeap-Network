@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./MainSection.module.css";
+
 const MainSection = ({ children }) => {
-  return <div className={styles.main_section__container}>{children}</div>;
+  // The CSS module styling for the container of the main section container does not work on the deployed version, and I could not quite figure out how to fix it yet therefore here I temporarily use the styling from the index.css file
+  return <div className="main_section__container">{children}</div>;
 };
 
 export default MainSection;
