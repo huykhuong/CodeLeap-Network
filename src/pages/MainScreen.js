@@ -30,7 +30,7 @@ const MainScreen = () => {
   const sortedPostsArray = [...posts].reverse();
 
   return (
-    <>
+    <div>
       <Header />
       <MainSection>
         <NewPostForm />
@@ -45,7 +45,7 @@ const MainScreen = () => {
       </MainSection>
       {deleting && <DeleteModal setDeleting={setDeleting} />}
       {editing && <EditModal setEditing={setEditing} />}
-    </>
+    </div>
   );
 };
 
