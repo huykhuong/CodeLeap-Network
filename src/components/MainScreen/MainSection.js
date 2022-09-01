@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainSection.module.css";
 
 const MainSection = ({ children }) => {
-  return <main className={styles.container}>{children}</main>;
+  return <main className={styles.main_section__container}>{children}</main>;
 };
 
 export default MainSection;

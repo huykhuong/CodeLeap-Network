@@ -19,7 +19,7 @@ const DeleteModal = ({ setDeleting }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.delete__container}>
       <div className={styles.modal}>
         <p className={styles.message}>
           Are you sure you want to delete this item?
