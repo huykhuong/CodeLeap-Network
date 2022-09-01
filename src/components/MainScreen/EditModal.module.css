@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 650px;
+  background-color: #ffffff;
+}
+
+.message {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.titleEditInput {
+  margin-bottom: 20px;
+}
+
+.contentEditInput textarea {
+  min-height: 100px;
+  white-space: pre-line;
+}
+
+.btn__group {
+  margin-top: 30px;
+  float: right;
+}
+
+.btn__group button {
+  background-color: transparent;
+  border: 1px solid #000000;
+  width: 80px;
+  padding: 5px 0;
+}
+
+.btn__group button:last-child {
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.disabled {
+  opacity: 0.2;
+}
