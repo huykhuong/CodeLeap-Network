@@ -19,8 +19,7 @@ const DeleteModal = ({ setDeleting }) => {
   };
 
   return (
-    // The CSS module styling for the container of the delete section container does not work on the deployed version, and I could not figure out how to fix it yet therefore here I temporarily use the styling from the index.css file
-    <div className={styles.delete__container}>
+    <div className={styles.container}>
       <div className={styles.modal}>
         <p className={styles.message}>
           Are you sure you want to delete this item?
