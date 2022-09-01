@@ -32,19 +32,19 @@ const MainScreen = () => {
   return (
     <div>
       <Header />
-      <main>
-        <MainSection>
-          <NewPostForm />
-          {sortedPostsArray.map((post) => (
-            <Post
-              key={post.id}
-              {...post}
-              setDeleting={setDeleting}
-              setEditing={setEditing}
-            />
-          ))}
-        </MainSection>
-      </main>
+
+      <MainSection>
+        <NewPostForm />
+        {sortedPostsArray.map((post) => (
+          <Post
+            key={post.id}
+            {...post}
+            setDeleting={setDeleting}
+            setEditing={setEditing}
+          />
+        ))}
+      </MainSection>
+
       {deleting && <DeleteModal setDeleting={setDeleting} />}
       {editing && <EditModal setEditing={setEditing} />}
     </div>
